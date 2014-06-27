@@ -9,7 +9,7 @@ class CategoriesTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		foreach(range(1, 25) as $index)
+		foreach(range(1, 50) as $index)
 		{
 			Categories::create([
                 'name' => $faker->sentence(4),
