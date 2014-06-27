@@ -9,7 +9,9 @@ class SummariesController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+        $summaries = Summaries::paginate(5);
+
+		return View::make('summary.index',compact('summaries'));
 	}
 
 
