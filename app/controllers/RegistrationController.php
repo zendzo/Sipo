@@ -38,7 +38,7 @@ class RegistrationController extends \BaseController {
 
 		Auth::login($user);
 
-		return Redirect::home()->with('flash_message','You Are Registered! Welcome to Gurindam Management Project');
+		return Redirect::home()->with('flash_message','You Are Now Registered! Welcome to Gurindam Management Project');
 	}
 
 
