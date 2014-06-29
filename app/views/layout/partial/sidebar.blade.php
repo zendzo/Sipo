@@ -53,6 +53,8 @@
                             <ul class="treeview-menu">
                                 <li><a href="/projects"><i class="fa fa-angle-double-right"></i>Projects List</a></li>
                                 <li><a href="/projects/create"><i class="fa fa-angle-double-right"></i>Create new Project</a></li>
+                                <li><a href="/summaries"><i class="fa fa-angle-double-right"></i>Summaries List</a></li>
+                                <li><a href="/summaries/create"><i class="fa fa-angle-double-right"></i>Create New Summaries</a></li>
                             </ul>
                         </li>
                         <li class="treeview">

@@ -22,7 +22,7 @@ class SummariesController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return View::make('summary.create');
 	}
 
 
