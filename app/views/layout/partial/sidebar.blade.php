@@ -55,27 +55,10 @@
                                 <li><a href="/projects/create"><i class="fa fa-angle-double-right"></i>Create new Project</a></li>
                                 <li><a href="/summaries"><i class="fa fa-angle-double-right"></i>Summaries List</a></li>
                                 <li><a href="/summaries/create"><i class="fa fa-angle-double-right"></i>Create New Summaries</a></li>
+                                <li><a href="/tasks"><i class="fa fa-angle-double-right"></i>Task Lists</a></li>
+                                <li><a href="/tasks/create"><i class="fa fa-angle-double-right"></i>Create New Task</a></li>
                             </ul>
                         </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-edit"></i> <span>Task</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="/tasks"><i class="fa fa-angle-double-right"></i>Create Task Summary</a></li>
-                                <li><a href="/summaries"><i class="fa fa-angle-double-right"></i>Create Task Name</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-table"></i> <span>Tables</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> Simple tables</a></li>
-                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Data tables</a></li>
-                            </ul>
                     </ul>
                 </section>
                 <!-- /.sidebar -->
