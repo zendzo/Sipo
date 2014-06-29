@@ -1,15 +1,26 @@
 <?php
 
+use Gurindam\Forms\TasksForm;
+
 class TasksController extends \BaseController {
 
-	/**
+    protected $taskForm;
+
+    function __construct(TasksForm $taskForm)
+    {
+        $this->taskForm = $taskForm;
+    }
+
+    /**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-		return View::make('task.index');
+        $tasks = Tasks::paginate(5);
+
+		return View::make('task.index',compact('tasks'));
 	}
 
 
@@ -20,7 +31,9 @@ class TasksController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+        $summaries = Summaries::lists('name','id');
+
+        return View::make('task.create',compact('summaries'));
 	}
 
 
@@ -31,7 +44,14 @@ class TasksController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+        $input = Input::only('name','duration','start','finish','summaries_id');
+
+        $this->taskForm->validate($input);
+
+        Tasks::create($input);
+
+        return Redirect::to('/tasks')->with('flash_message','Task Successfully Saved');
+
 	}
 
 

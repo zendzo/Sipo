@@ -61,7 +61,7 @@
                         @foreach($project->summary as $item)
                            <tr>
                                <th>{{ $item->id }}</th>
-                               <th>{{ $item->name }}</th>
+                               <th><p><label class="label label-primary">{{ $item->name }}</label></p></th>
                                <th>{{ $item->duration }}</th>
                                <th>{{ $item->start }}</th>
                                <th>{{ $item->finish }}</th>

@@ -11,7 +11,7 @@
 <div class="col-xs-12">
     <div class="box box-success">
         <div class="box-header">
-            <h3 class="box-title">Responsive Hover Table</h3>
+            <h3 class="box-title">Project List</h3>
             <div class="box-tools">
                 <div class="input-group">
                     <input type="text" name="table_search" class="form-control input-sm pull-right" style="width: 150px;" placeholder="Search">
