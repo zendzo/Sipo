@@ -36,7 +36,7 @@
         </div><!-- /.box-body -->
 
         <div class="box-footer">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
         </div>
     {{ Form::close() }}
 </div>
