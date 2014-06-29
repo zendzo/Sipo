@@ -30,7 +30,7 @@
                         <td>{{ $summary->duration }}</td>
                         <td>{{ $summary->start }}</td>
                         <td>{{ $summary->finish }}</td>
-                        <td>{{ $summary->project_id }}</td>
+                        <td>{{ $summary->projects_id }}</td>
                     </tr>
                 @endforeach
                 </tbody></table>

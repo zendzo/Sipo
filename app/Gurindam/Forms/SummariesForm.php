@@ -18,7 +18,7 @@ class SummariesForm extends FormValidator{
         'duration'=>'required',
         'start'=>'required',
         'finish'=>'required',
-        'project_id'=>'required'
+        'projects_id'=>'required'
     ];
 
 } 

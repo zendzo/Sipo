@@ -43,4 +43,42 @@
         </div><!-- /.box -->
     </div>
 
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Striped Full Width Table</h3>
+            </div><!-- /.box-header -->
+            <div class="box-body no-padding">
+                <table class="table table-striped">
+                    <tbody>
+                    <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Task Name</th>
+                        <th>Duration</th>
+                        <th>Start</th>
+                        <th>Finish</th>
+                    </tr>
+                        @foreach($project->summary as $item)
+                           <tr>
+                               <th>{{ $item->id }}</th>
+                               <th>{{ $item->name }}</th>
+                               <th>{{ $item->duration }}</th>
+                               <th>{{ $item->start }}</th>
+                               <th>{{ $item->finish }}</th>
+                           </tr>
+                    @foreach($item->task as $task)
+                    <tr>
+                        <td>{{ $task->id }}</td>
+                        <td>{{ $task->name }}</td>
+                        <td>{{ $task->duration }}</td>
+                        <td>{{ $task->start }}</td>
+                        <td>{{ $task->finish }}</td>
+                        @endforeach
+                    </tr>
+                        @endforeach
+                    </tbody></table>
+            </div><!-- /.box-body -->
+        </div>
+    </div>
+
     @stop

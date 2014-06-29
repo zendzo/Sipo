@@ -22,4 +22,9 @@ class Projects extends \Eloquent {
         return $this->belongsTo('User');
     }
 
+    public function summary()
+    {
+        return $this->hasMany('Summaries');
+    }
+
 }

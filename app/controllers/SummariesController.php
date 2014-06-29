@@ -43,7 +43,7 @@ class SummariesController extends \BaseController {
 	 */
 	public function store()
 	{
-        $input = Input::only('name','duration','start','finish','project_id');
+        $input = Input::only('name','duration','start','finish','projects_id');
 
         $this->summariesForm->validate($input);
 
@@ -61,7 +61,9 @@ class SummariesController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$summaries = Summaries::findOrFail($id);
+
+        return View::make('summary.detail',compact('summaries'));
 	}
 
 

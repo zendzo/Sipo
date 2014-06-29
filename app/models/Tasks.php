@@ -1,7 +1,7 @@
 <?php
 
 class Tasks extends \Eloquent {
-	protected $fillable = [];
+	protected $fillable = ['name','duration','start','finish','summaries_id'];
 
     /**
      * @return mixed

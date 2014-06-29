@@ -16,7 +16,7 @@ class SummariesTableSeeder extends Seeder {
                 'duration'=>$faker->randomNumber(),
                 'start'=>$faker->dateTime,
                 'finish'=>$faker->dateTime,
-                'project_id'=>$faker->randomDigitNotNull
+                'projects_id'=>$faker->randomDigitNotNull
 			]);
 		}
 	}

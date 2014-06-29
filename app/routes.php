@@ -33,8 +33,13 @@ Route::get('{username}','UserController@show');
 
 Route::get('/test', function(){
 
-    $user = Projects::all();
-    return $user->category;
+    Tasks::create([
+        'name'=>'pekerjaan 3',
+        'duration'=>'20',
+        'start'=>'11/12/2013',
+        'finish'=>'13/12/2014',
+        'summaries_id'=>2,
+    ]);
 
 });
 

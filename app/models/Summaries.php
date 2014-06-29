@@ -1,7 +1,7 @@
 <?php
 
 class Summaries extends \Eloquent {
-	protected $fillable = ['name','duration','start','finish','project_id'];
+	protected $fillable = ['name','duration','start','finish','projects_id'];
 
     /**
      * @return mixed

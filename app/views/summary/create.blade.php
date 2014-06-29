@@ -32,8 +32,8 @@
                 {{ Form::text('finish',null,['placeholder'=>'12/12/2014','class'=>'form-control','required'=>'required']) }}
             </div>
             <div class="form-group">
-                {{ Form::label('project_id','Project Category :') }}
-                {{ Form::select('project_id',$project,null,['class'=>'form-control','required'=>'required']) }}
+                {{ Form::label('projects_id','Project Category :') }}
+                {{ Form::select('projects_id',$project,null,['class'=>'form-control','required'=>'required']) }}
             </div>
         </div><!-- /.box-body -->
 
