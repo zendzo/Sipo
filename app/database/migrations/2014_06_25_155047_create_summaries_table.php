@@ -17,8 +17,8 @@ class CreateSummariesTable extends Migration {
 			$table->increments('id');
             $table->string('name');
             $table->integer('duration');
-            $table->dateTime('start');
-            $table->dateTime('finish');
+            $table->string('start','10');
+            $table->string('finish','10');
             $table->integer('project_id');
 			$table->timestamps();
 		});

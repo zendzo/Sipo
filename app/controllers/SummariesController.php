@@ -1,8 +1,16 @@
 <?php
+use Gurindam\Forms\SummariesForm;
 
 class SummariesController extends \BaseController {
 
-	/**
+    protected $summariesForm;
+
+    function __construct(SummariesForm $summariesForm)
+    {
+        $this->summariesForm = $summariesForm;
+    }
+
+    /**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
@@ -22,7 +30,9 @@ class SummariesController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('summary.create');
+        $project = Projects::lists('title','id');
+
+		return View::make('summary.create',compact('project'));
 	}
 
 
@@ -33,7 +43,13 @@ class SummariesController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+        $input = Input::only('name','duration','start','finish','project_id');
+
+        $this->summariesForm->validate($input);
+
+        Summaries::create($input);
+
+        return Redirect::to('/summaries')->with('flash_message','Summary Successfully Saved');
 	}
 
 
