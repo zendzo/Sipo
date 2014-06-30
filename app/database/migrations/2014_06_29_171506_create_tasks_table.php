@@ -20,6 +20,7 @@ class CreateTasksTable extends Migration {
             $table->string('start','10');
             $table->string('finish','10');
             $table->integer('summaries_id');
+            $table->integer('user_id');
 			$table->timestamps();
 		});
 	}

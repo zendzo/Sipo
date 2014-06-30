@@ -34,6 +34,7 @@
             <div class="form-group">
                 {{ Form::label('projects_id','Project Category :') }}
                 {{ Form::select('projects_id',$project,null,['class'=>'form-control','required'=>'required']) }}
+                {{ Form::hidden('user_id',Auth::user()->id) }}
             </div>
         </div><!-- /.box-body -->
 

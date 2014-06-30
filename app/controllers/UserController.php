@@ -41,7 +41,7 @@ class UserController extends \BaseController {
      */
     public function show($username)
 	{
-		return $username;
+		return $user = User::whereUsername($username)->get();
 	}
 
 

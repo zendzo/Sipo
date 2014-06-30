@@ -31,15 +31,4 @@ Route::resource('sessions','SessionController',['only'=>['create','store','destr
 #Profile - not finish yet
 Route::get('{username}','UserController@show');
 
-Route::get('/test', function(){
-
-    Tasks::create([
-        'name'=>'pekerjaan 3',
-        'duration'=>'20',
-        'start'=>'11/12/2013',
-        'finish'=>'13/12/2014',
-        'summaries_id'=>2,
-    ]);
-
-});
-
+Route::get('{username}/{attribute}','UserController@show');

@@ -44,7 +44,7 @@ class TasksController extends \BaseController {
 	 */
 	public function store()
 	{
-        $input = Input::only('name','duration','start','finish','summaries_id');
+        $input = Input::only('name','duration','start','finish','summaries_id','user_id');
 
         $this->taskForm->validate($input);
 

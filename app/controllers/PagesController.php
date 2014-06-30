@@ -10,10 +10,9 @@ class PagesController extends \BaseController {
 	 */
 	public function index()
 	{
-        $categories = Categories::all()->count();
-        $projects = Projects::all()->count();
+        $users = User::findOrfail(Auth::user()->id);
 
-        return View::make('pages.home',compact('categories','projects'))->withFlashMessage('Welcome.');
+        return View::make('pages.home',compact('users'))->withFlashMessage('Welcome.');
 	}
 
 	/**

@@ -14,7 +14,7 @@
     <div class="small-box bg-aqua">
         <div class="inner">
             <h3>
-                {{ $categories }}
+                {{ $users->category->count() }}
             </h3>
             <p>
                 Project Categories
@@ -33,7 +33,7 @@
     <div class="small-box bg-green">
         <div class="inner">
             <h3>
-                {{ $projects }}
+                {{ $users->project->count() }}
             </h3>
             <p>
                 Project Lists
@@ -52,10 +52,10 @@
     <div class="small-box bg-yellow">
         <div class="inner">
             <h3>
-                44
+                {{ $users->summary->count() }}
             </h3>
             <p>
-                Resource Lists
+                Summary Lists
             </p>
         </div>
         <div class="icon">
@@ -71,10 +71,10 @@
     <div class="small-box bg-red">
         <div class="inner">
             <h3>
-                65
+                {{ $users->task->count() }}
             </h3>
             <p>
-                Project Reports
+                Task Lists
             </p>
         </div>
         <div class="icon">

@@ -43,7 +43,7 @@ class SummariesController extends \BaseController {
 	 */
 	public function store()
 	{
-        $input = Input::only('name','duration','start','finish','projects_id');
+        $input = Input::only('name','duration','start','finish','projects_id','user_id');
 
         $this->summariesForm->validate($input);
 
