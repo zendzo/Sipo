@@ -30,5 +30,3 @@ Route::resource('sessions','SessionController',['only'=>['create','store','destr
 
 #Profile - not finish yet
 Route::get('{username}','UserController@show');
-
-Route::get('{username}/{attribute}','UserController@show');
