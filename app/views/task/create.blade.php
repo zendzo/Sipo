@@ -33,7 +33,7 @@
             {{ Form::text('finish',null,['placeholder'=>'12/12/2014','class'=>'form-control','required'=>'required']) }}
         </div>
         <div class="form-group">
-            {{ Form::label('summaries_id','Project Category :') }}
+            {{ Form::label('summaries_id','Summaries :') }}
             {{ Form::select('summaries_id',$summaries,null,['class'=>'form-control','required'=>'required']) }}
             {{ Form::hidden('user_id',Auth::user()->id) }}
         </div>
